@@ -9,11 +9,41 @@
 </head>
 <body>
 
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>My Language Learning Page</h1>
+ 
+<!-- BEGIN NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav notranslate">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="grammar.html">Grammar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vocabulary.html">Vocabulary</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="pronunciation.html">Pronunciation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END NAV BAR -->
+ 
+<!-- BEGIN BANNER -->
+<div class="container-fluid p-5 text-white text-center myBanner notranslate">
+ <h1>Learn English with Martin</h1>
   <p>Learn all you need to know about English!</p> 
 </div>
-  
+<!-- END BANNER -->
+ 
 <div class="container mt-5">
  {{ content }}
 </div>
