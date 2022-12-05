@@ -17,7 +17,7 @@ title: Pronunciation
 </ol>
 
 <button id="IdiomBtn">See another idiom</button>
-<p id="demo"></p>
+<dl id="quote"></dl>
 
 <script>
 var idioms = [ 
@@ -41,7 +41,7 @@ var examples = [
 
 var quoteNo;
 var idiomNo;
-btn2.addEventListener("click", loadQuote);
+IdiomBtn.addEventListener("click", loadQuote);
 function loadQuote() {
     idiomNo = Math.floor(Math.random() * (idioms.length));
     if(idiomNo !== quoteNo) {
