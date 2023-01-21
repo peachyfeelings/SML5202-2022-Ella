@@ -10,9 +10,14 @@ background-color: rgb(255, 92, 53);
 }
 
 h1 {
-  color: Black;
+  background-color: red;
+}
+
+div {
+  background-color: orange;
 }
 
 p {
-  color: Black;
+  background-color: yellow;
 }
+
