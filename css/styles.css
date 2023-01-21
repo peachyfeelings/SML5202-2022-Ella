@@ -1,18 +1,18 @@
 .myBanner {
     background: #295971;
-    background-image: linear-gradient(to left, #dc143c, #ff8c00);
+    background-image: linear-gradient(to left, #dc143c, #ff8c00, #fafad2);
     color: white;
 }
 
 
 body {
-  background-color: powderblue;
+  background-color: #fafad2;
 }
 
 h1 {
-  color: blue;
+  color: Black;
 }
 
 p {
-  color: red;
+  color: Black;
 }
