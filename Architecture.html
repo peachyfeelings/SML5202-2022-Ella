@@ -37,17 +37,12 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
 }
 </script>
 
@@ -59,7 +54,7 @@ function showSlides(n) {
   </div>
 
   <div class="mySlides">
-    <img src="https://www.e-architect.com/wp-content/uploads/2013/12/iglesia-parroquial-en-rivas-vaciamadrid-e171213-f.jpg" style="width:50%">
+    <img src="https://www.e-architect.com/wp-content/uploads/2013/12/iglesia-parroquial-en-rivas-vaciamadrid-e171213-f.jpg" style="width:70%">
     <div class="text">Madrid Architecture 2</div>
   </div>
 
@@ -72,8 +67,6 @@ function showSlides(n) {
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
-
-
 
 <hr>
 <p><a href="index.html">Home</a></p>
