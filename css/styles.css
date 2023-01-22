@@ -21,7 +21,6 @@ p {
   background-color: yellow;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -31,10 +30,6 @@ p {
 .mySlides {
   width: 50%;
   display: none;
-}
-
-.mySlides:first-child {
-  display: block;
 }
 
 .text {
