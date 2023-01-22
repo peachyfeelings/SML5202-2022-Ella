@@ -29,6 +29,7 @@ p {
 }
 
 .mySlides {
+  width: 50%;
   display: none;
 }
 
@@ -48,4 +49,4 @@ p {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding:
+}
