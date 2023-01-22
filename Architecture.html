@@ -46,6 +46,15 @@ function showSlides(n) {
 }
 </script>
 
+<script>
+  window.onload = function() {
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 1; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+  }
+</script>
+
   
   <div class="slideshow-container">
   <div class="mySlides">
