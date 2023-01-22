@@ -1,53 +1,65 @@
-<html>
+---
+layout: default 
+title: History
+---
 
-<head>
-    <title>How to: Easy pancakes recipe for all to enjoy.</title>
-</head>
-    
-<div class="container mt-5">
-  <h1>Easy pancakes for all to enjoy.</h1>
-    <p>Fancy a bit of a more substantial breakfast for you and your family to enjoy? This easy pancake recipe is completely fool proof to ensure perfect pancakes every time!(Well, as long as you follow the recipe)</p>
-    <p><em>My favourite addition is Nutella, but use whatever creative materials you wish!</em></p>
+<h1 style="color:blue;">History</h1>
 
-    <h2>Ingredients</h2>
-    <ul>
-      <li>100g plain flour</li>
-      <li> 2 <em> large <em> eggs </li>
-      <li>300ml whole milk </li>
-      <li>1 tbsp sunflower or vegetable oil, or a bit extra for perfect frying!</li>
-      <li> Lemon wedges and caster sugar for a French feel! (optional)</li>
-    </ul>
-
-
-    <h2>Instructions</h2>
-    <ol>
-      <li>Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.</li>
-      <li>Set a medium frying pan or crêpe pan over a medium heat and carefully wipe it with some oiled kitchen paper.</li>
-      <li>When hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go.</li>
-      <li>Add the lemon wedges and caster sugar, or even add in your own twist by frying some bacon and adding some maple syrup too!</li>
-      <li>Serve!</li>
-    </ol>
-
-<hr>
-    
-    <h2>Nutritional information per serving</h2>
-    <ul>
-      <li>Calories: 61kcal </li>
-      <li>Carbohydrates: 7g </li>
-      <li>Protein: 3g </li>
-      <li>Fat: 2g </li>
-      <li>Saturated Fat: 1g </li>
-      <li>Sodium: 100mg </li>
-      <li>Fiber: 2g (8%)</li>
-        <li>Sugar: 1g </li>
-    </ul>
-
-<hr>
-<p><strong>Credit: </strong><a href="https://www.bbcgoodfood.com/recipes/easy-pancakes/">Cassie Best</a></p>
-<hr>
-
-</div>
+<p style="color:red;">If you're going to be visiting Madrid, of course you want to immerse yourself in the language and culture by learning some important phrases that will make you souund like a local.</p>
 
 </body>
 </html>
+<p>Regarding pronunciation you canl earn all about..</p>
+<ol>
+  <li>lots of words</li>
+  <li>WORDZZZZ</li>
+  <li>sentences!!!</li>
+</ol>
+
+<button id="IdiomBtn">See another idiom</button>
+<dl id="quote"></dl>
+
+<script>
+var idioms = [ 
+'Encontrar tu media naranja = To find your other half.', 
+'Tickled pink = to be extremely pleased.', 
+'Caught red-handed = to catch someone in the act of doing something.',    
+'White lie = a small lie that is told to be polite or avoid hurting someone’s feelings.',
+'Feel blue = Be depressed or sad. The use of blue to mean “sad” dates from the late 1300s.',
+'See red = Become very angry suddenly.'
+];
+
+var examples = [
+'Example: <i>Creo he encontrado a mi media naranja = i think i have found my other half.</i>', 
+'Example: <i>Your grandma was tickled pink that you called on her birthday!</i>', 
+'Example: <i>He was caught red-handed while stealing those biscuits.</i>',
+'Example: <i>I didn’t like her dress, but I told a white lie because I didn’t want to offend her.</i>',
+'Example: <i>I was really feeling blue after she told me she was leaving.</i>',
+'Example: <i>The thought of Piers with Nicole made her see red.</i>'
+
+];
+
+var quoteNo;
+var idiomNo;
+IdiomBtn.addEventListener("click", loadQuote);
+function loadQuote() {
+    idiomNo = Math.floor(Math.random() * (idioms.length));
+    if(idiomNo !== quoteNo) {
+    //alert(quotes[quoteNo]);
+    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
+   	quoteNo = idiomNo;
+    	return quoteNo;
+    	}
+    	else {
+    	loadQuote();
+    	}
+	}
+loadQuote();
+</script>
+
+
+
+<hr>
+<p><a href="index.html">Home</a></p>
+<hr>
 
