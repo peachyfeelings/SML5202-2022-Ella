@@ -33,6 +33,10 @@ p {
   display: none;
 }
 
+.mySlides:first-child {
+  display: block;
+}
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
