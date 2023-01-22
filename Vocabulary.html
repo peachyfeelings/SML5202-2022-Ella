@@ -58,35 +58,27 @@ loadQuote();
 </script>
 
 <script>
-  // array of vocabulary words
   var vocabulary = ["perro", "gato", "casa", "mesa", "silla"];
-  // array of translations
   var translations = ["dog", "cat", "house", "table", "chair"];
-  
-  // get a random word from the vocabulary array
   var randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
-  // get the index of the word in the vocabulary array
   var wordIndex = vocabulary.indexOf(randomWord);
-  // get the corresponding translation from the translations array
   var wordTranslation = translations[wordIndex];
   
-  // create an input element for the user to enter their answer
+  var question = document.createElement("p");
+  question.innerHTML = "What is the translation of " + randomWord + "?";
+  document.body.appendChild(question);
+  
   var input = document.createElement("input");
   input.setAttribute("type", "text");
   document.body.appendChild(input);
   
-  // create a button to check the user's answer
   var button = document.createElement("button");
   button.innerHTML = "Check Answer";
   document.body.appendChild(button);
-  
-  // add an event listener to the button to check the user's answer
   button.addEventListener("click", checkAnswer);
   
   function checkAnswer() {
-    // get the user's answer from the input element
     var userAnswer = input.value;
-    // compare the user's answer to the correct translation
     if (userAnswer === wordTranslation) {
       alert("Correct! The translation of " + randomWord + " is " + wordTranslation);
     } else {
@@ -94,6 +86,7 @@ loadQuote();
     }
   }
 </script>
+
 
 
 <hr>
