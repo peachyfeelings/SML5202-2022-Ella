@@ -58,14 +58,14 @@ function loadQuote() {
 loadQuote();
 </script>
 <script>
-  var vocabulary = ["perro", "gato", "casa", "mesa", "silla"];
-  var translations = ["dog", "cat", "house", "table", "chair"];
+  var vocabulary = ["una cerveza", "el autobus", "el estacion de tren", "una copa de vino", "¿donde esta __?", "quiero pedir __"];
+  var translations = ["a beer", "the bus", "the train station", "a glass of wine", "¿where is __" "i want to order __];
   var randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
   var wordIndex = vocabulary.indexOf(randomWord);
   var wordTranslation = translations[wordIndex];
   
   var question = document.createElement("p");
-  question.innerHTML = "peepee What is the translation of " + randomWord + "?";
+  question.innerHTML = "Quiz time...what is the translation of " + randomWord + "?";
   document.body.appendChild(question);
   
   var input = document.createElement("input");
@@ -80,9 +80,9 @@ loadQuote();
   function checkAnswer() {
     var userAnswer = input.value;
     if (userAnswer === wordTranslation) {
-      alert("Correct! The translation of " + randomWord + " is " + wordTranslation);
+      alert("Nice one Spaniard! The translation of " + randomWord + " was indeed " + wordTranslation);
     } else {
-      alert("Incorrect. The correct translation of " + randomWord + " is " + wordTranslation);
+      alert("Oops... this one is for revision. The correct translation of " + randomWord + " is " + wordTranslation);
     }
   }
 </script>
