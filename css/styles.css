@@ -57,4 +57,10 @@ p {
   padding:2%;
 }
 
-
+#audio-player {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
