@@ -6,6 +6,7 @@
 
 body {
   background-color: rgba(255, 99, 71, 0.5);
+    font-family: Algerian;
 }
 
 h1 {
@@ -56,6 +57,4 @@ p {
   padding:2%;
 }
 
-body {
-  font-family: Algerian;
-}
+
