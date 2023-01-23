@@ -16,6 +16,47 @@ title: History
 <h2>The 20th century and the present</h2>
 <p>In the 20th century, Madrid saw an even bigger amount of development and modernisation. The Spanish Civil War of the 1930s had a major impact on the city, but it has since become a major tourist destination and hub of Spain.</p>
 
+<html>
+  <head>
+    <title>Madrid History Test</title>
+    <script>
+      var correctAnswers = 0;
+      function checkAnswer(questionId, answer) {
+        var correctAnswer = document.getElementById(questionId).getAttribute("data-answer");
+        if (answer == correctAnswer) {
+          correctAnswers++;
+        }
+      }
+      function showResults() {
+        alert("You got " + correctAnswers + " out of 5 questions correct!");
+        correctAnswers = 0;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Madrid History Test</h1>
+    <form>
+      <h2>Question 1</h2>
+      <p>When was Madrid founded?</p>
+      <input type="radio" name="question1" value="9th century" onclick="checkAnswer('question1', this.value)">9th century<br>
+      <input type="radio" name="question1" value="12th century" onclick="checkAnswer('question1', this.value)">12th century<br>
+      <input type="radio" name="question1" value="15th century" onclick="checkAnswer('question1', this.value)">15th century<br>
+      <input type="radio" name="question1" value="18th century" onclick="checkAnswer('question1', this.value)">18th century<br>
+      <p id="question1" data-answer="9th century"></p>
+      <h2>Question 2</h2>
+      <p>Which king made Madrid the capital of Spain?</p>
+      <input type="radio" name="question2" value="Ferdinand and Isabella" onclick="checkAnswer('question2', this.value)">Ferdinand and Isabella<br>
+      <input type="radio" name="question2" value="Charles V" onclick="checkAnswer('question2', this.value)">Charles V<br>
+      <input type="radio" name="question2" value="Philip II" onclick="checkAnswer('question2', this.value)">Philip II<br>
+      <input type="radio" name="question2" value="Felipe III" onclick="checkAnswer('question2', this.value)">Felipe III<br>
+      <p id="question2" data-answer="Philip II"></p>
+      <h2>Question 3</h2>
+      <p>Which famous museum is located in Madrid?</p>
+      <input type="radio" name="question3" value="The Louvre" onclick="checkAnswer('question3', this.value)">The Louvre<br>
+      <input type="radio" name="question3" value="The Prado" onclick="checkAnswer('question3', this.value)">The Prado<br>
+      <input type="radio" name="question3" value="The Uffizi" onclick="checkAnswer('question3', this.value)">The Uffizi<br>
+      <input type="radio" name="question3" value="The Rijksmuseum
+
 <hr>
 <p><a href="index.html">Home</a></p>
 <hr>
