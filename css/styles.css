@@ -47,7 +47,7 @@ p {
   margin-top: 20px;
 }
 
-.prev, .next {
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
