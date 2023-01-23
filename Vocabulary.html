@@ -29,6 +29,23 @@ title: Vocabulary
 
 <button id="IdiomBtn">See another idiom</button>
 <dl id="quote"></dl>
+	var quoteNo;
+var idiomNo;
+IdiomBtn.addEventListener("click", loadQuote);
+function loadQuote() {
+    idiomNo = Math.floor(Math.random() * (idioms.length));
+    if(idiomNo !== quoteNo) {
+    //alert(quotes[quoteNo]);
+    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
+   	quoteNo = idiomNo;
+    	return quoteNo;
+    	}
+    	else {
+    	loadQuote();
+    	}
+	}
+loadQuote();
+</script>
 
 <script>
 var idioms = [ 
@@ -102,23 +119,6 @@ var examples = [
 ];
 <p> What do you already know? </p>
 	
-var quoteNo;
-var idiomNo;
-IdiomBtn.addEventListener("click", loadQuote);
-function loadQuote() {
-    idiomNo = Math.floor(Math.random() * (idioms.length));
-    if(idiomNo !== quoteNo) {
-    //alert(quotes[quoteNo]);
-    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
-   	quoteNo = idiomNo;
-    	return quoteNo;
-    	}
-    	else {
-    	loadQuote();
-    	}
-	}
-loadQuote();
-</script>
 <script>
   var vocabulary = ["una cerveza", "el autobus", "el estacion de tren", "una copa de vino", "donde esta __", "quiero pedir __"];
   var translations = ["a beer", "the bus", "the train station", "a glass of wine", "where is", "i want to order"];
