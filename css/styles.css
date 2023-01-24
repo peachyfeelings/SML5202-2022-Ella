@@ -3,6 +3,7 @@
     background-image: linear-gradient(to left, #dc143c, #ff8c00, #fafad2);
     color: black;
 }
+
 <html>
 <head>
    <style>
@@ -19,17 +20,13 @@
    div {
   background-color: yellow;
   color: black;
+}
 </head>
 <body>
 </body>
 </html>
 <head>
 
-
-}
-
-
-}
 
 .slideshow-container {
   max-width: 1000px;
