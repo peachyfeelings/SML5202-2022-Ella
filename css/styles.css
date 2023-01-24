@@ -17,7 +17,7 @@ body {
 
 
 body {
-  background-color: var(--yellow);
+  background-color: var(linear-gradient(to right, #dc143c, #ff8c00, #fafad2);
 }
 
 
