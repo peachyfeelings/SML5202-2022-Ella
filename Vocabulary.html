@@ -109,40 +109,32 @@ title: Vocabulary
 	</body>
 <html>
 <p> Lets see what you already know. Try out this mini test fit with vocab that you can mix together to create sentences!.</p>
-
-	
-<script>
-  var vocabulary = ["una cerveza", "el autobus", "el estacion de tren", "una copa de vino", "donde esta __", "quiero pedir __"];
-  var translations = ["a beer", "the bus", "the train station", "a glass of wine", "where is", "i want to order"];
-  var randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
-  var wordIndex = vocabulary.indexOf(randomWord);
-  var wordTranslation = translations[wordIndex];
-  
-  var question = document.createElement("p");
-  question.innerHTML = "Quiz time...what is the translation of " + randomWord + "?";
-  document.body.appendChild(question);
-  
-  var input = document.createElement("input");
-  input.setAttribute("type", "text");
-  document.body.appendChild(input);
-  
-  var button = document.createElement("button");
-  button.innerHTML = "Check Answer";
-  document.body.appendChild(button);
-  button.addEventListener("click", checkAnswer);
-  
-  function checkAnswer() {
-    var userAnswer = input.value;
-    if (userAnswer === wordTranslation) {
-      alert("Nice one Spaniard! The translation of " + randomWord + " was indeed " + wordTranslation);
-    } else {
-      alert("Oops... this one is for revision. The correct translation of " + randomWord + " is " + wordTranslation);
+<div>
+  <h2>Quiz Time!</h2>
+  <p id="question"></p>
+  <input type="text" id="answer">
+  <button id="submit">Check Answer</button>
+  <p id="result"></p>
+  <script>
+    var vocabulary = ["una cerveza", "el autobus", "el estacion de tren", "una copa de vino", "donde esta __", "quiero pedir __"];
+    var translations = ["a beer", "the bus", "the train station", "a glass of wine", "where is", "i want to order"];
+    var randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
+    var wordIndex = vocabulary.indexOf(randomWord);
+    var wordTranslation = translations[wordIndex];
+    document.getElementById("question").innerHTML = "What is the translation of " + randomWord + "?";
+ 
+    function checkAnswer() {
+      var userAnswer = answer.value;
+      if (userAnswer === wordTranslation) {
+        alert("Nice one Spaniard! The translation of " + randomWord + " was indeed " + wordTranslation);
+      } else {
+        alert("Oops... this one is for revision. The correct translation of " + randomWord + " is " + wordTranslation);
+      }
     }
-  }
-</script>
-<body>
-	</html>
-
+    document.getElementById("submit").addEventListener("click", checkAnswer);
+  </script>
+</div>
+	
 <hr>
 <p><a href="index.html">Home</a></p>
 <hr>
