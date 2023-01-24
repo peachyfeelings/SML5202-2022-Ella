@@ -25,30 +25,58 @@ title: History
 </head>
 <body>
 	<h1>Madrid History Quiz</h1>
-	<form>
+	<form onsubmit="return checkAnswers()">
 		<h2>Question 1</h2>
 		<p>What was the name of the small settlement that would eventually become Madrid in the 9th century?</p>
-		<input type="text" name="question1">
+		<input type="text" name="question1" id="question1">
 		<h2>Question 2</h2>
 		<p>Who conquered Madrid in 1083?</p>
-		<input type="text" name="question2">
+		<input type="text" name="question2" id="question2">
 		<h2>Question 3</h2>
 		<p>What was the main industry in Madrid during the Middle Ages?</p>
-		<input type="text" name="question3">
+		<input type="text" name="question3" id="question3">
 		<h2>Question 4</h2>
 		<p>What was the most important building in medieval Madrid?</p>
-		<input type="text" name="question4">
+		<input type="text" name="question4" id="question4">
 		<h2>Question 5</h2>
 		<p>What was the period of prosperity and growth in Madrid in the 16th century called?</p>
-		<input type="text" name="question5">
+		<input type="text" name="question5" id="question5">
 		<h2>Question 6</h2>
 		<p>What event in the 20th century had a major impact on Madrid?</p>
-		<input type="text" name="question6">
+		<input type="text" name="question6" id="question6">
 		<input type="submit" value="Submit">
 	</form>
+	<script>
+		function checkAnswers() {
+			var correct = 0;
+			var question1 = document.getElementById("question1").value;
+			var question2 = document.getElementById("question2").value;
+			var question3 = document.getElementById("question3").value;
+			var question4 = document.getElementById("question4").value;
+			var question5 = document.getElementById("question5").value;
+			var question6 = document.getElementById("question6").value;
+			if (question1.toLowerCase() == "magerit") {
+				correct++;
+			}
+			if (question2.toLowerCase() == "king alfonso vi of castile") {
+				correct++;
+			}
+			if (question3.toLowerCase() == "agriculture") {
+				correct++;
+			}
+			if (question4.toLowerCase() == "royal palace") {
+				correct++;
+			}
+			if (question5.toLowerCase() == "golden age") {
+				correct++;
+			}
+			if (question6.toLowerCase() == "spanish civil war") {
+				correct++;
+			}
+			alert("You got " + correct + " out of 6 questions correct.");
 </body>
 </html>
-
+			
 <hr>
 <p><a href="index.html">Home</a></p>
 <hr>
