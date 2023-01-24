@@ -4,6 +4,14 @@
     color: black;
 }
 
+h1, .btn {
+    color: black;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+
 body {
   background-color: rgba(255, 99, 71, 0.5);
     font-family:verdana;
