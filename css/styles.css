@@ -7,54 +7,18 @@
 body {
   background-color: rgba(255, 99, 71, 0.5);
     font-family:verdana;
-
-
-:root {
-  --red: #ff0000;
-  --orange: #ffa500;
-  --yellow: #ffff00;
 }
 
+<style>
+  h1, h2, h3, h4, h5, h6 {
+    color: orange;
+  }
 
-body {
-  background-color: var(linear-gradient(to right, #dc143c, #ff8c00, #fafad2);
-}
+  p {
+    color: yellow;
+  }
+</style>
 
-
-header {
-  background-color: var(--red);
-  color: white;
-  padding: 20px;
-}
-
-
-nav {
-  background-color: var(--orange);
-  color: white;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-nav a:hover {
-  background-color: var(--red);
-}
-
-
-main {
-  padding: 20px;
-}
-
-
-footer {
-  background-color: var(--red);
-  color: white;
-  padding: 10px;
-}
 
 
 .slideshow-container {
