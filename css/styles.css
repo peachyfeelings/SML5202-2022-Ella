@@ -7,19 +7,55 @@
 body {
   background-color: rgba(255, 99, 71, 0.5);
     font-family:verdana;
+
+    /* Define color variables */
+:root {
+  --red: #ff0000;
+  --orange: #ffa500;
+  --yellow: #ffff00;
 }
 
-h1 {
-  background-color: red;
+/* Set background color for entire page */
+body {
+  background-color: var(--yellow);
 }
 
-div {
-  background-color: orange;
+/* Style the header */
+header {
+  background-color: var(--red);
+  color: white;
+  padding: 20px;
 }
 
-p {
-  background-color: yellow;
+/* Style the navigation menu */
+nav {
+  background-color: var(--orange);
+  color: white;
+  padding: 10px;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: var(--red);
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: var(--red);
+  color: white;
+  padding: 10px;
+}
+
 
 .slideshow-container {
   max-width: 1000px;
