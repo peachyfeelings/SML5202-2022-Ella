@@ -3,7 +3,7 @@
     background-image: linear-gradient(to left, #dc143c, #ff8c00, #fafad2);
     color: black;
 }
-
+<head>
 body {
   background-color: rgba(255, 99, 71, 0.5);
     font-family:verdana;
@@ -61,3 +61,4 @@ div {
     padding: 20px;
     border-radius: 10px;
 }
+</head>
