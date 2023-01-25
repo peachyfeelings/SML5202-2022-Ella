@@ -27,6 +27,12 @@
 </html>
 <head>
 
+#nav {
+    position: relative;
+    left: -90px;
+    background-color: yellow; 
+    color: black;
+}
 
 .slideshow-container {
   max-width: 1000px;
