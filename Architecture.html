@@ -70,7 +70,7 @@ function showSlides(n) {
     <a class="next" onclick="plusSlides(1)">Next Slide</a>
   </div>
 </div>
-<br>
+</br>
  </body>
 </html>
 
@@ -86,56 +86,6 @@ function showSlides(n) {
   </div>
   </div>
   </body>
-</html>
-
-<html>
-  <head>
- <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  slides[slideIndex-1].style.display = "block"; 
-}
-</script>
-  
-  <div class="slideshow-container">
-  <div class="mySlides">
-    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/af/ca/4f/caption.jpg?w=500&h=-1&s=1" style="width:70%">
-    <div class="text">Royal Palace of Madrid</div>
-  </div>
-
-  <div class="mySlides">
-    <img src="https://www.e-architect.com/wp-content/uploads/2013/12/iglesia-parroquial-en-rivas-vaciamadrid-e171213-f.jpg" style="width:70%">
-    <div class="text">Iglesia Parroquial en Rivas Madrid</div>
-  </div>
-
-  <div class="mySlides">
-    <img src="https://media.architecturaldigest.com/photos/57ad893acfc37bc171ad8082/2:1/w_5122,h_2561,c_limit/madrid-travel-guide.jpg" style="width:70%">
-    <div class="text">Typical highstreet buildings in central Madrid</div>
-  </div>
-  <br>
-  <div class="arrow-container">
-    <a class="next" onclick="plusSlides(1)">Next Slide</a>
-  </div>
-</div>
-<br>
- </body>
 </html>
 
 <hr>
