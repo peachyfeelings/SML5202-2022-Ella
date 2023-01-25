@@ -1,85 +1,80 @@
-.myBanner {
-    background: #295971;
-    background-image: linear-gradient(to left, #dc143c, #ff8c00, #fafad2);
-    color: black;
-}
-
 <html>
 <head>
-   <style>
-      body {
-         background-color: rgba(255, 99, 71, 0.5);
-    font-family:verdana;
-          </style>
-}
-
-     h1{
-         background-color: orange;
-  color: #000000;
-      }
-
-   div {
-  background-color: yellow;
-  color: #000000;
-}
+  <style>
+    myBanner {
+      background: #295971;
+      background-image: linear-gradient(to left, #dc143c, #ff8c00, #fafad2);
+      color: black;
+    }
+  body {
+     background-color: rgba(255, 99, 71, 0.5);
+     font-family: verdana;
+  }
+  
+  h1 {
+     background-color: orange;
+     color: #000000;
+  }
+  
+  div {
+     background-color: yellow;
+     color: #000000;
+  }
+  
+  #nav {
+     position: relative;
+     left: -90px;
+     background-color: #CD5C5C; 
+     color: #FAFAD2;
+  }
+  
+  .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+  }
+  
+  .mySlides {
+     width: 50%;
+     display: none;
+  }
+  
+  .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+  }
+  
+  .arrow-container {
+     text-align: center;
+     margin-top: 20px;
+  }
+  
+  .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     margin-right: 10%;
+     padding: 2%;
+  }
+  
+  #audio-player {
+     width: 30%;
+     margin: 0 auto;
+     background-color: #f4f4f4;
+     padding: 20px;
+     border-radius: 10px;
+  }
+ </style>
 </head>
 <body>
 </body>
 </html>
-<head>
 
-<html>
-<head>
-#nav {
-    position: relative;
-    left: -90px;
-    background-color: #CD5C5C; 
-    color: #FAFAD2;
-}
-</body>
-</html>
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  width: 50%;
-  display: none;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.arrow-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  margin-right: 10%;
-  padding:2%;
-}
-
-#audio-player {
-    width: 30%;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-}
-</head>
